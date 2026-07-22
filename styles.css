@@ -166,6 +166,17 @@ p { text-wrap: pretty; }
   color: oklch(0.93 0.07 85 / 0.16);
   user-select: none;
 }
+.hero-logo {
+  position: absolute;
+  right: clamp(3rem, 10vw, 12rem);
+  top: 47%;
+  transform: translateY(-50%);
+  width: clamp(240px, 26vw, 400px);
+  height: auto;
+  filter:
+    drop-shadow(0 0 50px oklch(0.79 0.13 78 / 0.55))
+    drop-shadow(0 4px 18px oklch(0.20 0.05 152 / 0.5));
+}
 .hero-inner {
   position: relative;
   width: min(1200px, 100%);
@@ -460,6 +471,7 @@ p { text-wrap: pretty; }
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .nav-links, .nav-give { display: none; }
+  .hero-logo { display: none; }
   .nav-brand img { width: 62px; height: 62px; }
   .nav.scrolled .nav-brand img { width: 48px; height: 48px; }
   .verse-logo { width: 132px; height: 132px; }
