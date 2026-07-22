@@ -169,7 +169,7 @@ p { text-wrap: pretty; }
 .hero-logo {
   position: absolute;
   right: clamp(4rem, 11vw, 13rem);
-  top: 38%;
+  top: calc(38% + 100px);
   transform: translateY(-50%);
   width: clamp(240px, 26vw, 400px);
   height: auto;
