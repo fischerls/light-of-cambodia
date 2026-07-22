@@ -81,11 +81,11 @@ p { text-wrap: pretty; }
   border-radius: 50%;
   background: #fff;
   padding: 3px;
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   transition: width 0.35s var(--ease-out), height 0.35s var(--ease-out);
 }
-.nav.scrolled .nav-brand img { width: 48px; height: 48px; }
+.nav.scrolled .nav-brand img { width: 56px; height: 56px; }
 .nav-name {
   font-family: "Young Serif", serif;
   font-size: 0.95rem;
@@ -258,8 +258,8 @@ p { text-wrap: pretty; }
   position: relative;
   display: inline-grid;
   place-items: center;
-  width: 128px;
-  height: 128px;
+  width: 168px;
+  height: 168px;
   border-radius: 50%;
   background: #fff;
   margin-bottom: 2.4rem;
@@ -460,10 +460,10 @@ p { text-wrap: pretty; }
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .nav-links, .nav-give { display: none; }
-  .nav-brand img { width: 52px; height: 52px; }
-  .nav.scrolled .nav-brand img { width: 44px; height: 44px; }
-  .verse-logo { width: 104px; height: 104px; }
-  .verse-logo img { width: 94px; height: 94px; }
+  .nav-brand img { width: 62px; height: 62px; }
+  .nav.scrolled .nav-brand img { width: 48px; height: 48px; }
+  .verse-logo { width: 132px; height: 132px; }
+  .verse-logo img { width: 118px; height: 118px; }
   .nav-toggle {
     display: flex;
     flex-direction: column;
