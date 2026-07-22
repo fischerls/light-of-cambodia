@@ -77,7 +77,15 @@ p { text-wrap: pretty; }
   box-shadow: 0 1px 0 oklch(0.30 0.06 152 / 0.12);
 }
 .nav-brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
-.nav-brand img { border-radius: 50%; background: #fff; padding: 2px; }
+.nav-brand img {
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+  width: 64px;
+  height: 64px;
+  transition: width 0.35s var(--ease-out), height 0.35s var(--ease-out);
+}
+.nav.scrolled .nav-brand img { width: 48px; height: 48px; }
 .nav-name {
   font-family: "Young Serif", serif;
   font-size: 0.95rem;
@@ -245,6 +253,17 @@ p { text-wrap: pretty; }
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse 60% 80% at 50% 110%, oklch(0.79 0.13 78 / 0.22), transparent 65%);
+}
+.verse-logo {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background: #fff;
+  margin-bottom: 2.4rem;
+  box-shadow: 0 0 70px oklch(0.79 0.13 78 / 0.5), 0 0 24px oklch(0.79 0.13 78 / 0.35);
 }
 .verse blockquote { position: relative; }
 .verse p {
@@ -441,6 +460,10 @@ p { text-wrap: pretty; }
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .nav-links, .nav-give { display: none; }
+  .nav-brand img { width: 52px; height: 52px; }
+  .nav.scrolled .nav-brand img { width: 44px; height: 44px; }
+  .verse-logo { width: 104px; height: 104px; }
+  .verse-logo img { width: 94px; height: 94px; }
   .nav-toggle {
     display: flex;
     flex-direction: column;
