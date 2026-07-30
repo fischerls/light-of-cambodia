@@ -1,0 +1,76 @@
+{
+  "name": "Light of Cambodia",
+  "tagline": "A light over the rice fields of Pursat",
+  "description": "Light of Cambodia is a Christ-centered nonprofit partnering with local pastors, teachers, and community leaders in rural Pursat, Cambodia to care for children, strengthen families, and share the hope of the gospel through long-term, relational ministry.",
+  "sourceUrl": "https://light-of-cambodia.pages.dev/",
+  "logo": {
+    "primary": "../assets/logo.png",
+    "alternates": ["../assets/logo.jpg"],
+    "notes": "500x500 RGBA PNG: a cross and flame within a laurel of leaves. PNG is the transparent working mark (used in nav at 100px, verse section at 152px, footer at 72px, and as favicon). JPG is the flat original. Logo is sacred: never redraw, recolor, or feed to a diffusion model as a reference; composite the real file."
+  },
+  "colors": [
+    { "role": "background", "hex": "#f7fbf8", "oklch": "oklch(0.985 0.006 150)", "name": "Bg", "usage": "page background, faint green-tinted white" },
+    { "role": "surface", "hex": "#eff5f0", "oklch": "oklch(0.965 0.010 148)", "name": "Surface", "usage": "cards, panels" },
+    { "role": "foreground", "hex": "#142a1a", "oklch": "oklch(0.26 0.04 152)", "name": "Ink", "usage": "primary text, deep green-black" },
+    { "role": "muted", "hex": "#334937", "oklch": "oklch(0.38 0.04 150)", "name": "Ink Soft", "usage": "secondary text" },
+    { "role": "border", "hex": "#dad4bf", "oklch": "oklch(0.87 0.03 95)", "name": "On-Dark Soft", "usage": "measured as soft text on dark sections; doubles as the only hairline-weight neutral, warm parchment" },
+    { "role": "accent", "hex": "#c74e33", "oklch": "oklch(0.58 0.16 34)", "name": "Flame", "usage": "CTAs (Give Now .btn-flame), hover #b53e23 Flame Hover" },
+    { "role": "accent-secondary", "hex": "#e8af4f", "oklch": "oklch(0.79 0.13 78)", "name": "Marigold", "usage": "gold buttons (.btn-gold), highlights; pairs with Sunlight #fee5b3 oklch(0.93 0.07 85) for glows and footer name" }
+  ],
+  "colorsExtended": [
+    { "hex": "#12361e", "oklch": "oklch(0.30 0.06 152)", "name": "Evergreen", "usage": "dark section backgrounds (values, verse, footer)" },
+    { "hex": "#092613", "oklch": "oklch(0.24 0.05 152)", "name": "Evergreen Deep", "usage": "deepest background, scrim gradients" },
+    { "hex": "#367341", "oklch": "oklch(0.50 0.10 148)", "name": "Leaf", "usage": "mid green accents" },
+    { "hex": "#fee5b3", "oklch": "oklch(0.93 0.07 85)", "name": "Sunlight", "usage": "warm glow highlights, footer wordmark on Evergreen" },
+    { "hex": "#f7f2e3", "oklch": "oklch(0.96 0.02 90)", "name": "On-Dark", "usage": "primary text on Evergreen sections" }
+  ],
+  "typography": {
+    "display": { "family": "Young Serif", "fallbacks": ["Georgia", "serif"], "weights": [400], "notes": "all headings, footer name; single weight face", "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" },
+    "body": { "family": "Alegreya Sans", "fallbacks": ["system-ui", "sans-serif"], "weights": [400, 500, 700], "notes": "body, buttons, nav; italic 400 also loaded", "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" },
+    "khmer": { "family": "Noto Serif Khmer", "fallbacks": ["serif"], "weights": [400, 600], "notes": "all [lang=km] Khmer script kickers and watermarks; bilingual identity is core to the brand", "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@400;600&display=swap" }
+  },
+  "voice": {
+    "adjectives": ["warm", "humble", "faithful", "relational", "rooted"],
+    "tone": "First-person plural, pastoral and plainspoken. Speaks of presence and long-term commitment, never savior language or urgency tactics. Scripture quoted directly (Matthew 5:14). Khmer script woven in as honor to the local language.",
+    "messagingPillars": [
+      "Christ-centered: the gospel guides everything",
+      "Relational ministry: long-term relationships over short-term solutions",
+      "Local partnership: come alongside, never replace, local leaders",
+      "Dignity and compassion: every person made in the image of God",
+      "Faithful stewardship: integrity, transparency, prayer"
+    ],
+    "vocabulary": {
+      "use": ["walk alongside", "presence", "showing up", "local leaders carry the work", "hope of the gospel", "partnership, not dependency"],
+      "avoid": ["quick solutions", "distant aid", "savior framing", "poverty spectacle", "donor-hero language"]
+    }
+  },
+  "imagery": {
+    "style": "Warm documentary photography of real ministry moments in Pursat: golden-hour light, rice fields, communal meals, prayer, construction by local hands.",
+    "subjects": ["children at play and study", "families outside their homes", "local pastors in prayer and discussion", "shared meals on woven mats", "ministry buildings under construction"],
+    "treatment": "Unstaged, dignified, warm color grade; radius 14px on all photos; hero gets evergreen scrim gradient + golden glow overlay",
+    "avoid": ["poverty spectacle", "staged stock photography", "cold or desaturated grades", "photos that center foreign visitors over local people"],
+    "samples": [
+      { "file": "../assets/photos/photo-01.jpg", "kind": "hero", "caption": "Children on tire playground at dusk, golden haze over rice fields (og:image + homepage hero)" },
+      { "file": "../assets/photos/photo-17.jpg", "kind": "photo", "caption": "Family and local leaders holding the Light of Cambodia sign" },
+      { "file": "../assets/photos/photo-02.jpg", "kind": "photo", "caption": "Children sharing a meal on woven mats" },
+      { "file": "../assets/photos/photo-07.jpg", "kind": "photo", "caption": "Mother and children receiving bicycles" },
+      { "file": "../assets/photos/photo-05.jpg", "kind": "photo", "caption": "Local pastors gathered in prayer" },
+      { "file": "../assets/photos/photo-11.jpg", "kind": "photo", "caption": "Steel roof frame of new ministry building" },
+      { "file": "../assets/photos/photo-14.jpg", "kind": "photo", "caption": "Team members embracing in prayer" },
+      { "file": "../assets/photos/photo-10.jpg", "kind": "photo", "caption": "Teenage girl with guitar, youth music ministry" }
+    ]
+  },
+  "layout": {
+    "radius": "14px",
+    "borderWeight": "1px",
+    "spacing": "generous section padding, alternating light/dark bands",
+    "postureRules": [
+      "Pill buttons (border-radius 999px); Flame for primary Give Now, Marigold gold for secondary, ghost outline for tertiary",
+      "Alternating full-width bands: photo + copy, flipped every other band (.band / .band-flip)",
+      "Dark Evergreen sections (verse, values, footer) use On-Dark cream text and Sunlight highlights",
+      "Every section kicker is bilingual: Khmer script first, English label second",
+      "Circular logo treatments (border-radius 50%) at nav, verse, and footer",
+      "Scroll-reveal animations (.reveal) with ease-out cubic-bezier(0.22, 1, 0.36, 1)"
+    ]
+  }
+}

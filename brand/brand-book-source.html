@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Light of Cambodia — Brand Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Noto+Serif+Khmer:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: "Alegreya Sans", sans-serif; color: #142A1A; font-size: 11.5pt; line-height: 1.55; }
+  .page { width: 8.5in; height: 11in; padding: 0.75in 0.8in; page-break-after: always; position: relative; overflow: hidden; background: #F7FBF8; }
+  .page:last-child { page-break-after: auto; }
+  h1, h2, h3 { font-family: "Young Serif", Georgia, serif; font-weight: 400; line-height: 1.15; color: #12361E; }
+  h2 { font-size: 24pt; margin-bottom: 4pt; }
+  .rule { width: 42pt; height: 3pt; background: #E8AF4F; border-radius: 2pt; margin: 10pt 0 18pt; }
+  .kicker { text-transform: uppercase; letter-spacing: 0.14em; font-weight: 700; font-size: 8.5pt; color: #C74E33; margin-bottom: 6pt; }
+  .foot { position: absolute; bottom: 0.45in; left: 0.8in; right: 0.8in; display: flex; justify-content: space-between; font-size: 8pt; color: #33493766; letter-spacing: 0.06em; text-transform: uppercase; }
+  p.lede { font-size: 12.5pt; color: #334937; max-width: 5.6in; }
+  .note { font-size: 9.5pt; color: #334937; }
+
+  /* cover */
+  .cover { background: #12361E; color: #F7F2E3; display: flex; flex-direction: column; justify-content: space-between; }
+  .cover .glow { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 55% at 72% 12%, rgba(232,175,79,0.28), transparent 60%); }
+  .cover-logo { width: 150pt; height: 150pt; border-radius: 50%; background: #fff; display: grid; place-items: center; overflow: hidden; margin-top: 0.9in; }
+  .cover-logo img { width: 118%; height: 118%; max-width: none; transform: translateX(1.5%); }
+  .cover h1 { color: #F7F2E3; font-size: 42pt; margin-top: 28pt; }
+  .cover .km { font-family: "Noto Serif Khmer", serif; color: #DAD4BF; font-size: 13pt; margin-top: 10pt; }
+  .cover-meta { position: relative; font-size: 9pt; letter-spacing: 0.12em; text-transform: uppercase; color: #DAD4BF; display: flex; justify-content: space-between; }
+
+  /* swatches */
+  .swatch-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12pt; }
+  .swatch { border-radius: 10pt; overflow: hidden; border: 1px solid #12361E14; background: #fff; }
+  .swatch .chip { height: 62pt; position: relative; }
+  .swatch .chip .tag { position: absolute; bottom: 6pt; left: 9pt; font-size: 7.5pt; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 1.5pt 6pt; border-radius: 999px; background: rgba(255,255,255,0.85); color: #142A1A; }
+  .swatch .meta { padding: 8pt 10pt 9pt; }
+  .swatch .name { font-weight: 700; font-size: 10.5pt; }
+  .swatch .vals { font-size: 8.2pt; color: #334937; line-height: 1.5; font-variant-numeric: tabular-nums; }
+  .swatch .use { font-size: 8.2pt; color: #33493799; margin-top: 3pt; line-height: 1.35; }
+
+  /* type */
+  .type-row { display: flex; gap: 16pt; align-items: baseline; border-bottom: 1px solid #12361E12; padding: 10pt 0; }
+  .type-row .label { width: 1.5in; font-size: 8.5pt; color: #334937; flex-shrink: 0; }
+  .ys { font-family: "Young Serif", Georgia, serif; }
+  .as { font-family: "Alegreya Sans", sans-serif; }
+  .km-f { font-family: "Noto Serif Khmer", serif; }
+
+  /* buttons */
+  .btn { display: inline-block; font-weight: 700; font-size: 11pt; padding: 8pt 20pt; border-radius: 999px; text-decoration: none; }
+  .btn-flame { background: #C74E33; color: #fff; }
+  .btn-gold { background: #E8AF4F; color: #092613; }
+  .btn-ghost { color: #12361E; border: 2px solid #12361E; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20pt; }
+  .card { background: #fff; border: 1px solid #12361E14; border-radius: 10pt; padding: 14pt; }
+  .card h3 { font-size: 12pt; margin-bottom: 6pt; }
+  .dont { color: #C74E33; font-weight: 700; }
+  .do { color: #367341; font-weight: 700; }
+  ul { padding-left: 14pt; }
+  li { margin-bottom: 4pt; font-size: 10pt; color: #334937; }
+  .logo-circle { width: 84pt; height: 84pt; border-radius: 50%; background: #fff; display: grid; place-items: center; overflow: hidden; box-shadow: 0 1pt 6pt rgba(18,54,30,0.18); }
+  .logo-circle img { width: 118%; height: 118%; max-width: none; transform: translateX(1.5%); }
+  code { font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt; background: #EFF5F0; padding: 1pt 4pt; border-radius: 3pt; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="page cover">
+  <div class="glow"></div>
+  <div style="position:relative">
+    <div class="cover-logo"><img src="file:///Users/larry/Desktop/Client-Work/light-of-cambodia/assets/logo.png" alt=""></div>
+    <h1>Light of Cambodia</h1>
+    <div style="font-size:14pt; color:#DAD4BF; margin-top:6pt;">Brand Guidelines</div>
+    <div class="km" lang="km">ពន្លឺនៃកម្ពុជា — the light of Cambodia</div>
+  </div>
+  <div class="cover-meta"><span>Version 1.0 — July 2026</span><span>light-of-cambodia.pages.dev</span></div>
+</section>
+
+<!-- BRAND AT A GLANCE -->
+<section class="page">
+  <div class="kicker">01 — The Brand</div>
+  <h2>At a Glance</h2>
+  <div class="rule"></div>
+  <p class="lede">Light of Cambodia is a Christ-centered nonprofit walking alongside children, families, and local leaders in rural Cambodia, sharing the hope of the gospel through long-term, relational ministry. The brand should feel warm, hopeful, rooted, and human. Sunlight over rice fields, not corporate charity.</p>
+  <div class="two-col" style="margin-top:22pt;">
+    <div class="card">
+      <h3>Brand feel</h3>
+      <ul>
+        <li><span class="do">Warm and personal.</span> Real photography of real people and places in Pursat.</li>
+        <li><span class="do">Rooted.</span> Deep greens ground the brand; flame and marigold bring light and hope.</li>
+        <li><span class="do">Quietly confident.</span> Generous whitespace, serif headlines, no visual noise.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Symbolism in the mark</h3>
+      <ul>
+        <li><strong>Cross (marigold gold):</strong> Christ at the center.</li>
+        <li><strong>Flame (vermilion):</strong> the light, the Spirit, hope.</li>
+        <li><strong>Laurel of leaves (green):</strong> growth, harvest, the rice fields of Pursat.</li>
+        <li><strong>Butterflies:</strong> new life, transformation.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:20pt;">
+    <h3>Bilingual identity</h3>
+    <p class="note">The brand lives in English and Khmer. The Khmer name <span class="km-f" lang="km">ពន្លឺនៃកម្ពុជា</span> appears alongside the English wordmark in hero and formal contexts. Always set Khmer text in Noto Serif Khmer, never in a Latin font's fallback.</p>
+  </div>
+  <div class="foot"><span>Light of Cambodia — Brand Guidelines</span><span>02</span></div>
+</section>
+
+<!-- LOGO -->
+<section class="page">
+  <div class="kicker">02 — Logo</div>
+  <h2>The Mark &amp; How to Use It</h2>
+  <div class="rule"></div>
+  <div style="display:flex; gap:24pt; align-items:center; margin-bottom:18pt;">
+    <div class="logo-circle"><img src="file:///Users/larry/Desktop/Client-Work/light-of-cambodia/assets/logo.png" alt=""></div>
+    <div style="width:84pt; height:84pt; border-radius:50%; background:#12361E; display:grid; place-items:center; overflow:hidden;"><img style="width:118%; height:118%; max-width:none; transform:translateX(1.5%); filter: drop-shadow(0 0 1pt rgba(255,255,255,0.4));" src="file:///Users/larry/Desktop/Client-Work/light-of-cambodia/assets/logo.png" alt=""></div>
+    <p class="note" style="flex:1">The master asset is a full-color mark on a transparent background (<code>logo.png</code>, 500×500). On photography or dark backgrounds, always place it inside a solid white circle. The artwork sits at ~118% of the circle diameter so the laurel reads clearly (the source file carries generous transparent padding — never letterbox it).</p>
+  </div>
+  <div class="two-col">
+    <div class="card">
+      <h3><span class="do">Do</span></h3>
+      <ul>
+        <li>Keep clear space around the mark of at least ¼ of its diameter.</li>
+        <li>Minimum size: 48px / 0.5in diameter on screen and print.</li>
+        <li>Pair with the wordmark set in Young Serif ("Light of / Cambodia" on two lines is the house style).</li>
+        <li>Use the white-circle treatment over photos and evergreen backgrounds.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3><span class="dont">Don't</span></h3>
+      <ul>
+        <li>Recolor, outline, or add effects to the mark. The logo is sacred — use the supplied file only.</li>
+        <li>Stretch, rotate, or crop into the artwork.</li>
+        <li>Place the full-color mark directly on busy photography without the white circle.</li>
+        <li>Redraw the cross, flame, laurel, or butterflies.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:20pt;">
+    <h3>Logo artwork colors (sampled from master file)</h3>
+    <div style="display:flex; gap:12pt; margin-top:8pt;">
+      <div style="flex:1"><div style="height:34pt; border-radius:6pt; background:#F0B040;"></div><div class="vals" style="font-size:8.5pt; margin-top:4pt;"><strong>Cross gold</strong><br>HEX #F0B040<br>RGB 240, 176, 64</div></div>
+      <div style="flex:1"><div style="height:34pt; border-radius:6pt; background:#D04010;"></div><div class="vals" style="font-size:8.5pt; margin-top:4pt;"><strong>Flame vermilion</strong><br>HEX #D04010<br>RGB 208, 64, 16</div></div>
+      <div style="flex:1"><div style="height:34pt; border-radius:6pt; background:#307030;"></div><div class="vals" style="font-size:8.5pt; margin-top:4pt;"><strong>Laurel green</strong><br>HEX #307030<br>RGB 48, 112, 48</div></div>
+      <div style="flex:1"><div style="height:34pt; border-radius:6pt; background:#FFFFFF; border:1px solid #12361E22;"></div><div class="vals" style="font-size:8.5pt; margin-top:4pt;"><strong>Circle white</strong><br>HEX #FFFFFF<br>RGB 255, 255, 255</div></div>
+    </div>
+    <p class="note" style="margin-top:8pt;">These are the colors inside the logo artwork itself. For everything else (layouts, type, UI) use the brand palette on the next pages.</p>
+  </div>
+  <div class="foot"><span>Light of Cambodia — Brand Guidelines</span><span>03</span></div>
+</section>
+
+<!-- CORE PALETTE -->
+<section class="page">
+  <div class="kicker">03 — Color</div>
+  <h2>Core Palette</h2>
+  <div class="rule"></div>
+  <p class="note" style="margin-bottom:14pt;">Drawn from the logo: laurel green, flame vermilion, marigold cross, dawn light. Native color space is OKLCH (used in the website CSS); hex and RGB are the print/design equivalents.</p>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="chip" style="background:#12361E"><span class="tag">Primary</span></div><div class="meta"><div class="name">Evergreen</div><div class="vals">HEX #12361E · RGB 18, 54, 30<br>oklch(0.30 0.06 152)</div><div class="use">Anchor color. Dark sections, nav, footer, headlines.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#092613"><span class="tag">Primary</span></div><div class="meta"><div class="name">Evergreen Deep</div><div class="vals">HEX #092613 · RGB 9, 38, 19<br>oklch(0.24 0.05 152)</div><div class="use">Deepest shade. Text on gold, footer depths.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#367341"><span class="tag">Primary</span></div><div class="meta"><div class="name">Leaf</div><div class="vals">HEX #367341 · RGB 54, 115, 65<br>oklch(0.50 0.10 148)</div><div class="use">Mid green. Accents, icons, hover states on light.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#C74E33"><span class="tag">Action</span></div><div class="meta"><div class="name">Flame</div><div class="vals">HEX #C74E33 · RGB 199, 78, 51<br>oklch(0.58 0.16 34)</div><div class="use">THE action color. Give Now buttons, key links. White text on top.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#B53E23"><span class="tag">Action</span></div><div class="meta"><div class="name">Flame Hover</div><div class="vals">HEX #B53E23 · RGB 181, 62, 35<br>oklch(0.53 0.16 34)</div><div class="use">Hover/pressed state of Flame. Never a resting color.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#E8AF4F"><span class="tag">Accent</span></div><div class="meta"><div class="name">Marigold</div><div class="vals">HEX #E8AF4F · RGB 232, 175, 79<br>oklch(0.79 0.13 78)</div><div class="use">Warm accent. Secondary buttons, rules, highlights, focus rings.</div></div></div>
+  </div>
+  <div style="margin-top:16pt;" class="card">
+    <h3>Usage ratio</h3>
+    <div style="display:flex; height:20pt; border-radius:999px; overflow:hidden; margin:8pt 0 6pt;">
+      <div style="flex:55; background:#F7FBF8; border:1px solid #12361E14;"></div>
+      <div style="flex:25; background:#12361E;"></div>
+      <div style="flex:10; background:#E8AF4F;"></div>
+      <div style="flex:6; background:#C74E33;"></div>
+      <div style="flex:4; background:#367341;"></div>
+    </div>
+    <p class="note">Roughly 55% light neutrals, 25% evergreen, 10% marigold, 6% flame, 4% leaf. Flame is scarce on purpose — it must stay loud enough to carry every call to action.</p>
+  </div>
+  <div class="foot"><span>Light of Cambodia — Brand Guidelines</span><span>04</span></div>
+</section>
+
+<!-- SUPPORTING PALETTE -->
+<section class="page">
+  <div class="kicker">03 — Color</div>
+  <h2>Neutrals &amp; Supporting Tones</h2>
+  <div class="rule"></div>
+  <div class="swatch-grid">
+    <div class="swatch"><div class="chip" style="background:#FEE5B3"><span class="tag">Support</span></div><div class="meta"><div class="name">Sunlight</div><div class="vals">HEX #FEE5B3 · RGB 254, 229, 179<br>oklch(0.93 0.07 85)</div><div class="use">Pale gold wash. Gold-button hover, soft highlight panels.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#F7FBF8; border-bottom:1px solid #12361E10"><span class="tag">Neutral</span></div><div class="meta"><div class="name">Background</div><div class="vals">HEX #F7FBF8 · RGB 247, 251, 248<br>oklch(0.985 0.006 150)</div><div class="use">Default page background. Green-tinted off-white, never pure white pages.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#EFF5F0"><span class="tag">Neutral</span></div><div class="meta"><div class="name">Surface</div><div class="vals">HEX #EFF5F0 · RGB 239, 245, 240<br>oklch(0.965 0.010 148)</div><div class="use">Cards, panels, alternate sections on light pages.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#142A1A"><span class="tag">Text</span></div><div class="meta"><div class="name">Ink</div><div class="vals">HEX #142A1A · RGB 20, 42, 26<br>oklch(0.26 0.04 152)</div><div class="use">Body text on light backgrounds. Near-black with green depth.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#334937"><span class="tag">Text</span></div><div class="meta"><div class="name">Ink Soft</div><div class="vals">HEX #334937 · RGB 51, 73, 55<br>oklch(0.38 0.04 150)</div><div class="use">Secondary text, captions, metadata on light backgrounds.</div></div></div>
+    <div class="swatch"><div class="chip" style="background:#F7F2E3"><span class="tag">Text on dark</span></div><div class="meta"><div class="name">On Dark</div><div class="vals">HEX #F7F2E3 · RGB 247, 242, 227<br>oklch(0.96 0.02 90)</div><div class="use">Primary text on evergreen. Warm cream, not white.</div></div></div>
+  </div>
+  <div class="swatch-grid" style="grid-template-columns: 1fr 1fr 1fr; margin-top:12pt;">
+    <div class="swatch"><div class="chip" style="background:#DAD4BF"><span class="tag">Text on dark</span></div><div class="meta"><div class="name">On Dark Soft</div><div class="vals">HEX #DAD4BF · RGB 218, 212, 191<br>oklch(0.87 0.03 95)</div><div class="use">Secondary text on evergreen backgrounds.</div></div></div>
+    <div class="swatch"><div class="meta" style="padding-top:12pt;"><div class="name">Accessibility</div><div class="use" style="font-size:8.6pt; margin-top:4pt;">Ink on Background = 14.6:1 (AAA). On Dark on Evergreen = 11.9:1 (AAA). White on Flame = 4.6:1 (AA, large-text safe). Evergreen Deep on Marigold = 8.2:1 (AAA). Never set Flame text on Evergreen.</div></div></div>
+    <div class="swatch"><div class="meta" style="padding-top:12pt;"><div class="name">Photo scrim</div><div class="use" style="font-size:8.6pt; margin-top:4pt;">Text over photography always sits on an evergreen gradient scrim: bottom-up fade of Evergreen Deep at ~92% → 55% → transparent by 65% height. Plus an optional marigold radial glow (Marigold at ~30% opacity) for warmth.</div></div></div>
+  </div>
+  <div class="foot"><span>Light of Cambodia — Brand Guidelines</span><span>05</span></div>
+</section>
+
+<!-- TYPOGRAPHY -->
+<section class="page">
+  <div class="kicker">04 — Typography</div>
+  <h2>Type System</h2>
+  <div class="rule"></div>
+  <div class="type-row"><div class="label">Headlines<br>Young Serif 400</div><div class="ys" style="font-size:30pt; color:#12361E;">A light over the rice fields</div></div>
+  <div class="type-row"><div class="label">Subheads<br>Young Serif 400</div><div class="ys" style="font-size:17pt; color:#12361E;">Walking alongside families in Pursat</div></div>
+  <div class="type-row"><div class="label">Body<br>Alegreya Sans 400</div><div class="as" style="font-size:11.5pt; max-width:4.6in;">We are a Christ-centered nonprofit sharing the hope of the gospel through long-term, relational ministry. Body text sets at 18px (1.125rem) with 1.65 line height on the web.</div></div>
+  <div class="type-row"><div class="label">Emphasis / UI<br>Alegreya Sans 700</div><div class="as" style="font-size:11.5pt; font-weight:700;">Buttons, labels, and strong emphasis use the bold cut.</div></div>
+  <div class="type-row"><div class="label">Eyebrow labels<br>Alegreya Sans 700</div><div class="as" style="font-weight:700; letter-spacing:0.14em; text-transform:uppercase; font-size:9pt; color:#C74E33;">Uppercase · Tracked +4 to +8% · Flame or Leaf</div></div>
+  <div class="type-row" style="border-bottom:none;"><div class="label">Khmer<br>Noto Serif Khmer 400/600</div><div class="km-f" lang="km" style="font-size:15pt;">ពន្លឺនៃកម្ពុជា</div></div>
+  <div class="two-col" style="margin-top:14pt;">
+    <div class="card">
+      <h3>Rules</h3>
+      <ul>
+        <li>Young Serif has one weight (400). Never fake-bold or italicize it.</li>
+        <li>Headlines set tight (line-height ~1.12) and are never all-caps.</li>
+        <li>Fallbacks: Georgia/serif for Young Serif; system-ui/sans-serif for Alegreya Sans.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Sourcing</h3>
+      <p class="note">All three families are free on Google Fonts:<br><code>Young+Serif</code> · <code>Alegreya+Sans (400/500/700 + italic 400)</code> · <code>Noto+Serif+Khmer (400/600)</code></p>
+    </div>
+  </div>
+  <div class="foot"><span>Light of Cambodia — Brand Guidelines</span><span>06</span></div>
+</section>
+
+<!-- UI ELEMENTS -->
+<section class="page">
+  <div class="kicker">05 — Graphic Elements</div>
+  <h2>Buttons, Shapes &amp; Photography</h2>
+  <div class="rule"></div>
+  <div class="card">
+    <h3>Buttons — always pill-shaped (999px radius)</h3>
+    <div style="display:flex; gap:12pt; align-items:center; margin:10pt 0 8pt;">
+      <span class="btn btn-flame">Give Now</span>
+      <span class="btn btn-gold">Get Involved</span>
+      <span class="btn btn-ghost">See Our Work</span>
+    </div>
+    <p class="note"><strong>Flame</strong> (#C74E33, white text) is the primary action, reserved for giving/donation CTAs. <strong>Gold</strong> (#E8AF4F, Evergreen Deep text) is secondary; hovers to Sunlight #FEE5B3. <strong>Ghost</strong> (2px current-color border) sits on photos and dark sections. Labels are Alegreya Sans Bold. Focus rings are 3px Marigold.</p>
+  </div>
+  <div class="two-col" style="margin-top:16pt;">
+    <div class="card">
+      <h3>Shape language</h3>
+      <ul>
+        <li>Cards and images: 14px corner radius.</li>
+        <li>Buttons and tags: full pill (999px).</li>
+        <li>The circle is a brand motif (logo circle, radial glows). No sharp-cornered boxes.</li>
+        <li>Motion eases with cubic-bezier(0.22, 1, 0.36, 1) — soft, settling movement.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Photography</h3>
+      <ul>
+        <li>Documentary, warm, golden-hour light. Children, families, rice fields, real ministry moments in Pursat.</li>
+        <li>No stock-photo gloss, no posed corporate imagery.</li>
+        <li>Crop ratios in use: 4:4.6 portraits, 4:3 project cards.</li>
+        <li>Under text: evergreen scrim gradient (see page 5). Standalone: no filter beyond gentle warmth.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="card" style="margin-top:16pt; background:#12361E; border:none;">
+    <h3 style="color:#F7F2E3;">Dark sections</h3>
+    <p class="note" style="color:#DAD4BF;">Full-bleed Evergreen #12361E panels are a signature move (hero, verse band, footer). Text is On Dark #F7F2E3 / On Dark Soft #DAD4BF, accents are Marigold, and a soft marigold radial glow may rise from an edge. Oversized watermark Khmer script at very low opacity is an approved texture.</p>
+  </div>
+  <div class="foot"><span>Light of Cambodia — Brand Guidelines</span><span>07</span></div>
+</section>
+
+<!-- QUICK REFERENCE -->
+<section class="page">
+  <div class="kicker">06 — Quick Reference</div>
+  <h2>One-Page Cheat Sheet</h2>
+  <div class="rule"></div>
+  <table style="width:100%; border-collapse:collapse; font-size:9pt;">
+    <tr style="text-align:left; color:#334937;"><th style="padding:5pt 6pt; border-bottom:2px solid #12361E;">Token</th><th style="padding:5pt 6pt; border-bottom:2px solid #12361E;">HEX</th><th style="padding:5pt 6pt; border-bottom:2px solid #12361E;">RGB</th><th style="padding:5pt 6pt; border-bottom:2px solid #12361E;">OKLCH (web CSS)</th><th style="padding:5pt 6pt; border-bottom:2px solid #12361E;">Role</th></tr>
+    <tr><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#12361E;vertical-align:-1pt;"></span> Evergreen</td><td>#12361E</td><td>18, 54, 30</td><td>oklch(0.30 0.06 152)</td><td>Anchor / dark sections</td></tr>
+    <tr style="background:#EFF5F0;"><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#092613;vertical-align:-1pt;"></span> Evergreen Deep</td><td>#092613</td><td>9, 38, 19</td><td>oklch(0.24 0.05 152)</td><td>Deepest shade</td></tr>
+    <tr><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#367341;vertical-align:-1pt;"></span> Leaf</td><td>#367341</td><td>54, 115, 65</td><td>oklch(0.50 0.10 148)</td><td>Mid-green accent</td></tr>
+    <tr style="background:#EFF5F0;"><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#C74E33;vertical-align:-1pt;"></span> Flame</td><td>#C74E33</td><td>199, 78, 51</td><td>oklch(0.58 0.16 34)</td><td>Primary CTA</td></tr>
+    <tr><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#B53E23;vertical-align:-1pt;"></span> Flame Hover</td><td>#B53E23</td><td>181, 62, 35</td><td>oklch(0.53 0.16 34)</td><td>CTA hover only</td></tr>
+    <tr style="background:#EFF5F0;"><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#E8AF4F;vertical-align:-1pt;"></span> Marigold</td><td>#E8AF4F</td><td>232, 175, 79</td><td>oklch(0.79 0.13 78)</td><td>Warm accent / secondary CTA</td></tr>
+    <tr><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#FEE5B3;vertical-align:-1pt;"></span> Sunlight</td><td>#FEE5B3</td><td>254, 229, 179</td><td>oklch(0.93 0.07 85)</td><td>Pale gold wash</td></tr>
+    <tr style="background:#EFF5F0;"><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#F7FBF8;border:1px solid #12361E22;vertical-align:-1pt;"></span> Background</td><td>#F7FBF8</td><td>247, 251, 248</td><td>oklch(0.985 0.006 150)</td><td>Page background</td></tr>
+    <tr><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#EFF5F0;border:1px solid #12361E22;vertical-align:-1pt;"></span> Surface</td><td>#EFF5F0</td><td>239, 245, 240</td><td>oklch(0.965 0.010 148)</td><td>Cards / panels</td></tr>
+    <tr style="background:#EFF5F0;"><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#142A1A;vertical-align:-1pt;"></span> Ink</td><td>#142A1A</td><td>20, 42, 26</td><td>oklch(0.26 0.04 152)</td><td>Body text</td></tr>
+    <tr><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#334937;vertical-align:-1pt;"></span> Ink Soft</td><td>#334937</td><td>51, 73, 55</td><td>oklch(0.38 0.04 150)</td><td>Secondary text</td></tr>
+    <tr style="background:#EFF5F0;"><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#F7F2E3;border:1px solid #12361E22;vertical-align:-1pt;"></span> On Dark</td><td>#F7F2E3</td><td>247, 242, 227</td><td>oklch(0.96 0.02 90)</td><td>Text on evergreen</td></tr>
+    <tr><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#DAD4BF;vertical-align:-1pt;"></span> On Dark Soft</td><td>#DAD4BF</td><td>218, 212, 191</td><td>oklch(0.87 0.03 95)</td><td>Secondary on evergreen</td></tr>
+    <tr style="background:#EFF5F0;"><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#F0B040;vertical-align:-1pt;"></span> Logo: Cross gold</td><td>#F0B040</td><td>240, 176, 64</td><td>—</td><td>Inside logo art only</td></tr>
+    <tr><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#D04010;vertical-align:-1pt;"></span> Logo: Flame</td><td>#D04010</td><td>208, 64, 16</td><td>—</td><td>Inside logo art only</td></tr>
+    <tr style="background:#EFF5F0;"><td style="padding:4pt 6pt;"><span style="display:inline-block;width:9pt;height:9pt;border-radius:2pt;background:#307030;vertical-align:-1pt;"></span> Logo: Laurel</td><td>#307030</td><td>48, 112, 48</td><td>—</td><td>Inside logo art only</td></tr>
+  </table>
+  <div class="two-col" style="margin-top:14pt;">
+    <div class="card"><h3>Fonts</h3><p class="note">Young Serif 400 (headlines) · Alegreya Sans 400/500/700 + italic (body/UI) · Noto Serif Khmer 400/600 (Khmer). All on Google Fonts.</p></div>
+    <div class="card"><h3>Shapes &amp; assets</h3><p class="note">Radius 14px cards · 999px pill buttons · white-circle logo on photos/dark · master logo: <code>assets/logo.png</code> (500×500, transparent).</p></div>
+  </div>
+  <div class="foot"><span>Light of Cambodia — Brand Guidelines</span><span>08</span></div>
+</section>
+
+</body>
+</html>
