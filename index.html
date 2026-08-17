@@ -16,16 +16,20 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <header class="nav" id="top">
-  <a class="nav-brand" href="#top">
+  <a class="nav-brand" href="index.html">
     <span class="nav-logo"><img src="assets/logo.png" alt="Light of Cambodia logo — a cross and flame within a laurel of leaves" width="100" height="100"></span>
     <span class="nav-name">Light of<br>Cambodia</span>
   </a>
   <nav class="nav-links" aria-label="Primary">
-    <a href="#who">Who We Are</a>
-    <a href="#work">Our Work</a>
-    <a href="#involved">Get Involved</a>
-    <a href="#contact">Contact</a>
+    <a href="our-story.html">Our Story</a>
+    <a href="how-we-work.html">How We Work</a>
+    <a href="our-impact.html">Our Impact</a>
+    <a href="our-team.html">Our Team</a>
+    <a href="financials.html">Financials</a>
+    <a href="prayer.html">Pray</a>
   </nav>
   <a class="btn btn-flame nav-give" href="https://www.zeffy.com/en-US/donation-form/0152b182-8cbf-4714-b26a-99909867ee95" target="_blank" rel="noopener">Give Now</a>
   <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -33,14 +37,17 @@
   </button>
 </header>
 <div class="mobile-menu" id="mobile-menu" hidden>
-  <a href="#who">Who We Are</a>
-  <a href="#work">Our Work</a>
-  <a href="#involved">Get Involved</a>
-  <a href="#contact">Contact</a>
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="our-story.html">Our Story</a>
+  <a href="how-we-work.html">How We Work</a>
+  <a href="our-impact.html">Our Impact</a>
+  <a href="our-team.html">Our Team</a>
+  <a href="financials.html">Financials</a>
+  <a href="prayer.html">Pray</a>
   <a class="btn btn-flame" href="https://www.zeffy.com/en-US/donation-form/0152b182-8cbf-4714-b26a-99909867ee95" target="_blank" rel="noopener">Give Now</a>
 </div>
 
-<main>
+<main id="main">
 
 <!-- HERO -->
 <section class="hero">
@@ -127,18 +134,48 @@
     </div>
   </article>
 
-  <div class="projects reveal">
+  <div class="projects reveal" id="stories">
     <h3>On the ground right now</h3>
-    <div class="projects-row">
-      <figure><img src="assets/photos/photo-11.jpg" alt="Steel roof frame of a new ministry building rising against the sky" loading="lazy"><figcaption>A new gathering place, built by local hands</figcaption></figure>
-      <figure><img src="assets/photos/photo-10.jpg" alt="A teenage girl smiling with a guitar during youth music ministry" loading="lazy"><figcaption>Youth &amp; teen ministry</figcaption></figure>
-      <figure><img src="assets/photos/photo-13.jpg" alt="A ministry worker visiting an elderly woman and her grandchildren at their home" loading="lazy"><figcaption>Showing up, week after week</figcaption></figure>
+    <div class="carousel" data-carousel aria-roledescription="carousel" aria-label="Stories from Pursat">
+      <div class="carousel-viewport">
+        <div class="carousel-track" data-carousel-track>
+          <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Story 1 of 3: Computer class">
+            <img src="assets/photos/reel-computers.jpg" alt="Children seated at desktop computers during class in Pursat" loading="lazy" width="1600" height="1200">
+            <div class="carousel-copy">
+              <p class="carousel-title">Computer class, every weekday</p>
+              <p class="carousel-hook">Kids in Pursat show up for computer class taught by two of our own local teachers, Kong Phally and Srey Lin. For many, it's the first time they've ever touched a computer.</p>
+              <a class="carousel-link" href="https://www.facebook.com/share/p/18m5AtWutB/" target="_blank" rel="noopener">See the full story<span class="sr-only"> about computer class on Facebook</span></a>
+            </div>
+          </div>
+          <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Story 2 of 3: Youth ministry">
+            <img src="assets/photos/impact-teens-music.jpg" alt="Teenagers playing guitar and singing together during youth ministry" loading="lazy" width="1280" height="720">
+            <div class="carousel-copy">
+              <p class="carousel-title">Youth ministry is growing</p>
+              <p class="carousel-hook">Youth meetings have nearly doubled in a few weeks, from 9 to 13 teens gathering for worship, teaching, and real conversation.</p>
+              <a class="carousel-link" href="https://www.facebook.com/share/p/1F9p4VRGsZ/" target="_blank" rel="noopener">See the full story<span class="sr-only"> about youth ministry on Facebook</span></a>
+            </div>
+          </div>
+          <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Story 3 of 3: New believers">
+            <img src="assets/photos/reel-baptism.jpg" alt="Pastor Sophanna baptizing a new believer in the water" loading="lazy" width="720" height="844">
+            <div class="carousel-copy">
+              <p class="carousel-title">New believers this summer</p>
+              <p class="carousel-hook">This summer, several people in our Pursat community chose to follow Jesus for the first time.</p>
+              <a class="carousel-link" href="https://www.facebook.com/share/p/1FKsZ6LYSj/" target="_blank" rel="noopener">See the full story<span class="sr-only"> about new believers on Facebook</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls" data-carousel-controls hidden>
+        <button class="carousel-btn" type="button" data-carousel-prev aria-label="Previous story">&#8592;</button>
+        <button class="carousel-btn" type="button" data-carousel-next aria-label="Next story">&#8594;</button>
+        <div class="carousel-dots" data-carousel-dots></div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- VALUES -->
-<section class="values">
+<section class="values" id="values">
   <div class="values-inner">
     <p class="kicker kicker-light"><span class="kicker-km" lang="km">តម្លៃ</span><span class="kicker-en">What guides us</span></p>
     <ul class="values-list">
@@ -172,9 +209,12 @@
       <p class="band-km band-km-light" lang="km">អធិស្ឋាន</p>
       <h3>Pray</h3>
       <p>Prayer is foundational to everything we do. Pray for the children and families we serve, for local pastors and leaders, and for wisdom, protection, and faithfulness as the gospel is shared.</p>
+      <p class="page-links"><a class="btn btn-gold" href="prayer.html">Submit a prayer request</a></p>
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- CONTACT / FOOTER -->
 <footer class="footer" id="contact">
@@ -194,10 +234,18 @@
       </div>
     </div>
   </div>
+  <nav class="footer-nav" aria-label="Footer">
+    <a href="index.html">Home</a>
+    <a href="our-story.html">Our Story</a>
+    <a href="how-we-work.html">How We Work</a>
+    <a href="our-impact.html">Our Impact</a>
+    <a href="our-team.html">Our Team</a>
+    <a href="financials.html">Financial Transparency</a>
+    <a href="prayer.html">Prayer Request</a>
+  </nav>
   <p class="footer-fine">© <span id="year">2026</span> Light of Cambodia · A Christ-centered nonprofit serving Pursat, Cambodia</p>
 </footer>
 
-</main>
 <script src="app.js"></script>
 </body>
 </html>
