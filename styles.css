@@ -588,6 +588,8 @@ p { text-wrap: pretty; }
 
 /* photo + copy band inside interior pages (reuses .band grid) */
 .band-tall .band-photo img { aspect-ratio: 4 / 5; }
+/* keep faces near the top of a portrait photo from being cropped */
+.band-photo img.focus-top { object-position: center top; }
 .band-copy > .band-note { margin-top: 1rem; font-style: italic; color: var(--ink-soft); }
 
 /* next-steps link row */
