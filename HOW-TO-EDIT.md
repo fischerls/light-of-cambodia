@@ -2,10 +2,10 @@
 
 You can update the website yourself. You do it by asking Claude, the same AI helper you already
 use. You type what you want changed, in plain words. Claude makes the change. You look at a
-preview. When it looks right, Larry puts it live.
+preview. When it looks right, **you** put it live.
 
-**You cannot break the live website.** Every change goes to a preview page first. The real site
-only changes after Larry approves it. So relax and try things.
+**You cannot break the live website by accident.** Every change goes to a preview page first, and
+the real site only changes when you choose to publish it. So relax and try things.
 
 ---
 
@@ -33,10 +33,13 @@ Larry will walk you through every click on the call.
 4. Claude does the work and gives you a **preview link**. Click it. That is a private copy of the
    site with your change on it.
 5. Look at the preview. Is it right?
-   - **Yes?** Tell Claude *"looks good, open a pull request and send it to Larry."* Larry reviews it,
-     approves it, and it goes live. Usually the same day.
    - **No?** Tell Claude what to fix. "Make the photo bigger." "That's the wrong name." It tries
-     again and gives you a new preview link.
+     again and gives you a new preview link. Repeat until you like it.
+   - **Yes?** Tell Claude *"looks good, publish it."* It opens a pull request and merges it. The
+     live site updates by itself, usually within a minute. Then go look at
+     **www.lightofcambodia.org** to see it.
+
+You do not need to wait for Larry. The site is yours to update.
 
 ---
 
@@ -74,7 +77,8 @@ These are locked so nothing important gets damaged. If you truly need one change
 - **The site colors and fonts never change.** They come from the brand book.
 - **The donate form is not touched.** Donations keep working.
 - **The prayer form's behind-the-scenes part is not touched.**
-- **Nothing goes straight to the live site.** Preview first, Larry second.
+- **Nothing goes straight to the live site.** There is always a preview first, and you decide
+  when it publishes. That safety step cannot be turned off, even by accident.
 
 ---
 
@@ -83,7 +87,10 @@ These are locked so nothing important gets damaged. If you truly need one change
 - Claude already knows the site's rules. You do not have to remind it.
 - Your changes are never lost. Every version is saved, and anything can be undone.
 - If a photo you want is already on the site, just say where you saw it.
-- Stuck? Email or text Larry. There is no wrong button to press.
+- Stuck, or a change feels bigger than a wording fix? Email or text Larry. There is no wrong
+  button to press, and nothing you do is permanent.
+- If something ever looks wrong on the live site, tell Claude *"undo the last change and publish."*
+  Every version is saved, so going back is quick.
 
 ---
 
