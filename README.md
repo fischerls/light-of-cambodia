@@ -30,10 +30,12 @@ anything technical, and you cannot break the live site.
 
 1. Someone (usually Claude) makes the change on a **branch** — a private copy.
 2. That branch automatically publishes a **preview link** so it can be looked at first.
-3. A **pull request** is opened. Larry reviews it.
-4. Larry merges it into `main`, and the live site updates by itself, usually within a minute.
+3. A **pull request** is opened.
+4. Once the preview looks right, the pull request is merged into `main`, and the live site updates
+   by itself, usually within a minute.
 
-Nothing reaches www.lightofcambodia.org until step 4.
+Nothing reaches www.lightofcambodia.org until step 4. `main` is protected, so a change physically
+cannot skip the preview.
 
 ## Who to ask
 

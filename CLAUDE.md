@@ -6,7 +6,9 @@ Static site for Light of Cambodia, a Christ-centered nonprofit in Pursat, Cambod
 
 - Never commit directly to `main`. `main` is production: every push to it auto-deploys to lightofcambodia.org via GitHub Actions.
 - Always work on a new branch and open a pull request. Every branch push auto-deploys a preview at `https://<branch-name>.light-of-cambodia.pages.dev` (branch name lowercased, `/` and `_` become `-`).
-- Share the preview link in the PR description so it can be checked before merging. Larry Fischer (repo owner) reviews and merges.
+- Share the preview link in the PR description so it can be checked before merging. Jennifer reviews her own preview and merges the PR herself; merging to `main` publishes to lightofcambodia.org automatically.
+- The PR is required and cannot be skipped: `main` is a protected branch. Never try to push to it directly, and never suggest that as a workaround.
+- Loop Larry in on the PR only when something is genuinely uncertain: a fact you could not verify, an accessibility question, a change that touches `functions/`, the donate form, the nav/footer across all seven pages, or anything that felt bigger than what was asked.
 - Fill in `.github/PULL_REQUEST_TEMPLATE.md` when opening the PR, including the preview link and the checklist.
 - Change requests usually come from Jennifer (Light of Cambodia), who is not technical. Explain what you did in plain language, and never ask her to run a command. `HOW-TO-EDIT.md` is the guide she follows.
 
