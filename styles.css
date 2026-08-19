@@ -506,3 +506,340 @@ p { text-wrap: pretty; }
   .hero-khmer { top: 12%; right: 2%; }
   .involved-pray { min-height: 420px; }
 }
+
+/* =========================================================
+   INTERIOR PAGES  (Our Story, How We Work, Our Impact,
+   Our Team, Financial Transparency, Prayer Request)
+   ========================================================= */
+
+/* skip link */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-200%);
+  background: var(--marigold);
+  color: var(--evergreen-deep);
+  font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.2s var(--ease-out);
+}
+.skip-link:focus { transform: none; outline: 3px solid var(--evergreen-deep); outline-offset: 2px; }
+
+/* current page marker in nav */
+.nav-links a[aria-current="page"],
+.mobile-menu a[aria-current="page"] { color: var(--marigold); text-decoration: underline; text-underline-offset: 5px; }
+.nav.scrolled .nav-links a[aria-current="page"] { color: var(--flame); }
+
+/* page hero — dark band so the transparent nav keeps its contrast */
+.page-hero {
+  position: relative;
+  background: var(--evergreen-deep);
+  color: var(--on-dark);
+  padding: clamp(9rem, 18vh, 13rem) clamp(1.25rem, 4vw, 3rem) clamp(3.5rem, 7vw, 5.5rem);
+  overflow: hidden;
+}
+.page-hero-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 90% at 78% 8%, oklch(0.79 0.13 78 / 0.22), transparent 62%);
+}
+.page-hero-inner { position: relative; width: min(1200px, 100%); margin-inline: auto; }
+.page-hero h1 { font-size: clamp(2.2rem, 5vw, 3.9rem); color: var(--on-dark); max-width: 18ch; }
+.page-hero-lede {
+  max-width: 62ch;
+  margin-top: 1.3rem;
+  font-size: clamp(1.1rem, 1.5vw, 1.28rem);
+  color: var(--on-dark-soft);
+}
+.page-hero .kicker-km { color: var(--marigold); }
+.page-hero .kicker-en { color: var(--on-dark-soft); }
+
+/* generic page section + prose */
+.section { padding: clamp(3.5rem, 8vw, 6.5rem) clamp(1.25rem, 4vw, 3rem); }
+.section-tight { padding-block: clamp(2.5rem, 5vw, 4rem); }
+.section-surface { background: var(--surface); }
+.section-dark { background: var(--evergreen); color: var(--on-dark); }
+.section-inner { width: min(1200px, 100%); margin-inline: auto; }
+.section-inner-narrow { width: min(820px, 100%); margin-inline: auto; }
+.section h2 { font-size: clamp(1.7rem, 3.2vw, 2.6rem); color: var(--evergreen); margin-bottom: 1.2rem; }
+.section-dark h2 { color: var(--sunlight); }
+.section h3 { font-size: clamp(1.35rem, 2.2vw, 1.8rem); color: var(--evergreen); margin-bottom: 0.8rem; }
+.prose p { color: var(--ink-soft); max-width: 62ch; }
+.prose p + p { margin-top: 1.1rem; }
+.prose-lead { font-size: 1.2rem; color: var(--ink) !important; }
+.section-dark .prose p { color: var(--on-dark-soft); }
+
+/* pull quote / verse line inside a light page */
+.page-verse {
+  font-family: "Young Serif", serif;
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+  line-height: 1.35;
+  color: var(--evergreen);
+  border-left: 3px solid var(--marigold);
+  padding-left: 1.4rem;
+  max-width: 40ch;
+  margin-block: 2rem;
+}
+.page-verse cite { display: block; margin-top: 0.8rem; font-family: "Alegreya Sans", sans-serif; font-style: normal; font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--leaf); }
+
+/* photo + copy band inside interior pages (reuses .band grid) */
+.band-tall .band-photo img { aspect-ratio: 4 / 5; }
+/* keep faces near the top of a portrait photo from being cropped */
+.band-photo img.focus-top { object-position: center top; }
+.band-copy > .band-note { margin-top: 1rem; font-style: italic; color: var(--ink-soft); }
+
+/* next-steps link row */
+.page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.4rem;
+}
+
+/* ---------- team grid ---------- */
+.team-group + .team-group { margin-top: clamp(3rem, 6vw, 4.5rem); }
+.team-group > h2 { margin-bottom: 1.8rem; }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.25rem);
+}
+.team-card { display: flex; flex-direction: column; }
+.team-card img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.team-name { font-family: "Young Serif", serif; font-size: 1.25rem; color: var(--evergreen); margin-top: 0.9rem; }
+.team-role {
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--flame);
+  margin-top: 0.15rem;
+}
+.team-bio { margin-top: 0.5rem; font-size: 1rem; color: var(--ink-soft); }
+
+/* ---------- stat tiles ---------- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: clamp(1rem, 2vw, 1.5rem);
+  margin-top: 2rem;
+}
+.stat {
+  background: #fff;
+  border: 1px solid oklch(0.30 0.06 152 / 0.14);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.5rem;
+}
+.section-surface .stat { background: #fff; }
+.stat-value {
+  font-family: "Young Serif", serif;
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  line-height: 1.05;
+  color: var(--evergreen);
+}
+.stat-label { margin-top: 0.6rem; color: var(--ink-soft); font-size: 1.02rem; }
+.stat-when {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--leaf);
+  font-weight: 700;
+}
+.stat a { color: var(--flame); }
+
+/* ---------- financial figures + chart ---------- */
+.fig-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; max-width: 640px; }
+.fig-table caption { text-align: left; font-weight: 700; color: var(--evergreen); padding-bottom: 0.6rem; }
+.fig-table th, .fig-table td { text-align: left; padding: 0.85rem 1rem; border-bottom: 1px solid oklch(0.30 0.06 152 / 0.16); }
+.fig-table td:last-child, .fig-table th:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.fig-table tbody tr:last-child th, .fig-table tbody tr:last-child td { border-bottom: 0; font-weight: 700; }
+
+.chart { margin-top: 1.75rem; max-width: 720px; display: grid; gap: 1.1rem; }
+.chart-row { display: grid; grid-template-columns: 1fr auto; gap: 0.4rem 1rem; align-items: baseline; }
+.chart-label { color: var(--ink); font-weight: 500; }
+.chart-value { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--evergreen); }
+.chart-track {
+  grid-column: 1 / -1;
+  height: 14px;
+  border-radius: 4px;
+  background: oklch(0.30 0.06 152 / 0.10);
+  overflow: hidden;
+}
+.chart-bar { height: 100%; background: var(--leaf); border-radius: 0 4px 4px 0; }
+
+/* ---------- carousel ---------- */
+.carousel { position: relative; margin-top: 1.8rem; }
+.carousel-viewport { overflow: hidden; border-radius: var(--radius); }
+.carousel-track { display: flex; transition: transform 0.6s var(--ease-out); }
+.carousel-slide {
+  flex: 0 0 100%;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  align-items: center;
+  background: #fff;
+  border: 1px solid oklch(0.30 0.06 152 / 0.14);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.carousel-slide img { width: 100%; height: 100%; aspect-ratio: 5 / 4; object-fit: cover; }
+.carousel-copy { padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem) 0; }
+.carousel-title { font-family: "Young Serif", serif; font-size: 1.3rem; color: var(--evergreen); margin-bottom: 0.7rem; }
+.carousel-hook { color: var(--ink-soft); }
+.carousel-link {
+  display: inline-block;
+  margin-top: 1.1rem;
+  font-weight: 700;
+  color: var(--flame);
+  text-underline-offset: 4px;
+}
+.carousel-controls { display: flex; align-items: center; gap: 0.5rem; margin-top: 1.1rem; }
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 2px solid var(--evergreen);
+  background: transparent;
+  color: var(--evergreen);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.carousel-btn:hover { background: var(--evergreen); color: var(--on-dark); }
+.carousel-btn:focus-visible { outline: 3px solid var(--marigold); outline-offset: 3px; }
+.carousel-dots { display: flex; gap: 0.35rem; margin-left: 0.35rem; }
+.carousel-dot {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.carousel-dot::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: oklch(0.30 0.06 152 / 0.28);
+  transition: background-color 0.25s;
+}
+.carousel-dot[aria-current="true"]::before { background: var(--flame); }
+.carousel-dot:focus-visible { outline: 3px solid var(--marigold); outline-offset: -4px; border-radius: 999px; }
+
+/* ---------- forms ---------- */
+.form { margin-top: 2rem; max-width: 640px; display: grid; gap: 1.35rem; }
+.field { display: grid; gap: 0.4rem; }
+.field > label, .fieldset > legend { font-weight: 700; color: var(--evergreen); }
+.field-hint { font-size: 0.95rem; color: var(--ink-soft); }
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: inherit;
+  font-size: 1.05rem;
+  color: var(--ink);
+  background: #fff;
+  border: 2px solid oklch(0.30 0.06 152 / 0.28);
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  width: 100%;
+  min-height: 48px;
+}
+.form textarea { min-height: 180px; resize: vertical; }
+.form input:focus-visible, .form textarea:focus-visible {
+  outline: 3px solid var(--marigold);
+  outline-offset: 1px;
+  border-color: var(--evergreen);
+}
+.fieldset { border: 0; display: grid; gap: 0.55rem; }
+.choice { display: flex; align-items: flex-start; gap: 0.7rem; min-height: 44px; padding-block: 0.35rem; }
+.choice input { width: 24px; height: 24px; margin-top: 0.15rem; accent-color: var(--flame); flex-shrink: 0; }
+.choice label { color: var(--ink-soft); }
+.form button[type="submit"] { border: 0; cursor: pointer; justify-self: start; font-family: "Alegreya Sans", sans-serif; }
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-status { font-weight: 700; }
+.form-status[data-state="ok"] { color: var(--leaf); }
+.form-status[data-state="error"] { color: var(--flame); }
+.form-note { font-size: 0.95rem; color: var(--ink-soft); max-width: 62ch; margin-top: 1.2rem; }
+
+/* ---------- footer nav ---------- */
+.footer-nav {
+  width: min(1100px, 100%);
+  margin: clamp(2.5rem, 5vw, 3.5rem) auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid oklch(0.96 0.02 90 / 0.18);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.75rem;
+}
+.footer-nav a {
+  color: var(--on-dark-soft);
+  text-decoration: none;
+  font-weight: 500;
+  padding-block: 0.4rem;
+}
+.footer-nav a:hover { color: var(--marigold); text-decoration: underline; }
+
+/* ---------- responsive (interior) ---------- */
+@media (max-width: 1100px) {
+  .nav-links, .nav-give { display: none; }
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: auto;
+    background: none;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .nav-toggle span { width: 26px; height: 2.5px; background: var(--on-dark); border-radius: 2px; transition: background-color 0.35s; }
+  .nav.scrolled .nav-toggle span { background: var(--evergreen); }
+}
+@media (max-width: 820px) {
+  .carousel-slide { grid-template-columns: 1fr; }
+  .carousel-copy { padding: 0 clamp(1.25rem, 4vw, 2rem) clamp(1.5rem, 4vw, 2rem); }
+  .team-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track { transition: none; }
+}
+
+/* screen-reader-only text */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* carousel: works without JS (stacked), enhanced with JS (sliding) */
+.carousel-track { display: grid; gap: 1.5rem; }
+.js .carousel-track { display: flex; gap: 0; }
+.carousel-controls[hidden] { display: none; }
+
+/* width/height attributes on <img> would otherwise beat the CSS aspect-ratio */
+.band-photo img,
+.team-card img,
+.carousel-slide img,
+.who-photo img,
+.projects-row img { height: auto; }
