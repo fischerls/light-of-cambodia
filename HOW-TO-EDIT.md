@@ -29,7 +29,7 @@ Larry will walk you through every click on the call.
 3. Type what you want changed, like you are texting a helper. For example:
    - "On the Our Team page, change Sok Chea's title to Program Director."
    - "Add this new photo to the Our Impact page." (You can attach photos.)
-   - "Fix the spelling of 'Battambang' on the How We Work page."
+   - "Fix the spelling of 'Battambang' on the Our Work page."
 4. Claude does the work and gives you a **preview link**. Click it. That is a private copy of the
    site with your change on it.
 5. Look at the preview. Is it right?
@@ -51,7 +51,7 @@ Say which page you mean. These are the ones that exist:
 |---|---|
 | **Home** | Hero, mission, Our Work, recent stories, give and pray |
 | **Our Story** | How Light of Cambodia started |
-| **How We Work** | Partnership, local leadership, the programs |
+| **Our Work** | Partnership, local leadership, the programs |
 | **Our Impact** | The numbers and photos from the field |
 | **Our Team** | Cambodia team, board, founders |
 | **Financials** | The yearly money summary and public filings |
