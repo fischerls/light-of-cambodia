@@ -8,7 +8,7 @@ Static site, no build step. Deployed to Cloudflare Pages; `lightofcambodia.org` 
 |---|---|
 | `index.html` | Homepage. Hero, mission, verse, Our Work bands, stories carousel, values, give/pray, footer. |
 | `our-story.html` | Founding story: Nareth's lighter, Sydney's butterflies. Video embed slot is a TODO comment near the top. |
-| `how-we-work.html` | Partnership-not-dependency in practice: local leadership, Community Child Care Program, Battambang branch. |
+| `our-work.html` | Partnership-not-dependency in practice: local leadership, Community Child Care Program, Battambang branch. |
 | `our-impact.html` | Dated program numbers as stat tiles, then photo bands. Update whenever the Pursat team sends new numbers. |
 | `our-team.html` | Cambodia ministry team, board, founders. Same card treatment for every group on purpose. |
 | `financials.html` | FY2025 summary table, expense-share bars, public filings. Numbers change once a year after the 990-EZ is filed. |

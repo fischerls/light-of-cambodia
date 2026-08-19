@@ -117,7 +117,7 @@ p { text-wrap: pretty; }
   position: fixed;
   inset: 0;
   z-index: var(--z-menu);
-  background: var(--evergreen-deep);
+  background: var(--evergreen);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -260,7 +260,7 @@ p { text-wrap: pretty; }
 /* ---------- verse ---------- */
 .verse {
   position: relative;
-  background: var(--evergreen-deep);
+  background: var(--evergreen);
   color: var(--on-dark);
   padding: clamp(5rem, 11vw, 8.5rem) clamp(1.25rem, 4vw, 3rem);
   text-align: center;
@@ -289,6 +289,9 @@ p { text-wrap: pretty; }
   line-height: 1.3;
   color: var(--sunlight);
 }
+/* longer anchor verse: smaller type so the band keeps its proportions */
+.verse-long p { font-size: clamp(1.1rem, 2vw, 1.7rem); max-width: 34ch; margin-inline: auto; }
+
 .verse cite {
   display: block;
   margin-top: 1.4rem;
@@ -417,7 +420,7 @@ p { text-wrap: pretty; }
 
 /* ---------- footer ---------- */
 .footer {
-  background: var(--evergreen-deep);
+  background: var(--evergreen);
   color: var(--on-dark);
   padding: clamp(4.5rem, 9vw, 7rem) clamp(1.25rem, 4vw, 3rem) 2rem;
 }
@@ -537,7 +540,7 @@ p { text-wrap: pretty; }
 /* page hero — dark band so the transparent nav keeps its contrast */
 .page-hero {
   position: relative;
-  background: var(--evergreen-deep);
+  background: var(--evergreen);
   color: var(--on-dark);
   padding: clamp(9rem, 18vh, 13rem) clamp(1.25rem, 4vw, 3rem) clamp(3.5rem, 7vw, 5.5rem);
   overflow: hidden;
@@ -590,6 +593,7 @@ p { text-wrap: pretty; }
 .band-tall .band-photo img { aspect-ratio: 4 / 5; }
 /* keep faces near the top of a portrait photo from being cropped */
 .band-photo img.focus-top { object-position: center top; }
+.band-photo img.focus-upper { object-position: center 28%; }
 .band-copy > .band-note { margin-top: 1rem; font-style: italic; color: var(--ink-soft); }
 
 /* next-steps link row */
