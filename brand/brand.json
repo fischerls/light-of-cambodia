@@ -51,10 +51,10 @@
     "avoid": ["poverty spectacle", "staged stock photography", "cold or desaturated grades", "photos that center foreign visitors over local people"],
     "samples": [
       { "file": "../assets/photos/photo-01.jpg", "kind": "hero", "caption": "Children on tire playground at dusk, golden haze over rice fields (og:image + homepage hero)" },
-      { "file": "../assets/photos/photo-17.jpg", "kind": "photo", "caption": "Family and local leaders holding the Light of Cambodia sign" },
-      { "file": "../assets/photos/photo-02.jpg", "kind": "photo", "caption": "Children sharing a meal on woven mats" },
-      { "file": "../assets/photos/photo-07.jpg", "kind": "photo", "caption": "Mother and children receiving bicycles" },
-      { "file": "../assets/photos/photo-05.jpg", "kind": "photo", "caption": "Local pastors gathered in prayer" },
+      { "file": "../assets/photos/home-prayer-generations.jpg", "kind": "photo", "caption": "Older woman praying with a small child on her lap" },
+      { "file": "../assets/photos/home-shared-meal.jpg", "kind": "photo", "caption": "Children sharing a meal from trays on the floor" },
+      { "file": "../assets/photos/home-school-children.jpg", "kind": "photo", "caption": "Grandmother with two children in school uniforms" },
+      { "file": "../assets/photos/home-community-singing.jpg", "kind": "photo", "caption": "Community women together, one singing into a microphone" },
       { "file": "../assets/photos/photo-11.jpg", "kind": "photo", "caption": "Steel roof frame of new ministry building" },
       { "file": "../assets/photos/photo-14.jpg", "kind": "photo", "caption": "Team members embracing in prayer" },
       { "file": "../assets/photos/photo-10.jpg", "kind": "photo", "caption": "Teenage girl with guitar, youth music ministry" }
