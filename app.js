@@ -124,7 +124,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   // no-JS submissions come back here via redirect
   const sent = new URLSearchParams(location.search).get('sent');
   if (sent === '1') say("Thank you for trusting us with this. We're honored to carry it with you.", 'ok');
-  if (sent === 'error') say('Something went wrong sending that. Please email lightofcambodia.loc@gmail.com and we will pray with you.', 'error');
+  if (sent === 'error') say('Something went wrong sending that. Please email info@lightofcambodia.org and we will pray with you.', 'error');
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
@@ -147,7 +147,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
       loadedAt.value = String(Date.now());
       say("Thank you for trusting us with this. We're honored to carry it with you.", 'ok');
     } catch (err) {
-      say('Something went wrong sending that. Please email lightofcambodia.loc@gmail.com and we will pray with you.', 'error');
+      say('Something went wrong sending that. Please email info@lightofcambodia.org and we will pray with you.', 'error');
     } finally {
       submit.disabled = false;
     }
