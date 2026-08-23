@@ -283,13 +283,18 @@ p { text-wrap: pretty; }
   box-shadow: 0 0 70px oklch(0.79 0.13 78 / 0.5), 0 0 24px oklch(0.79 0.13 78 / 0.35);
 }
 /* logo.png carries ~21% transparent margin on every side, so the mark itself
-   fills only ~57% of the file. Scaling past the circle brings the mark up to
-   about 72% of the circle; the part that overflows is transparent padding. */
+   fills only ~57% of the file. Scaling brings the mark up to about 72% of the
+   circle; what spills past the edge is transparent padding.
+   Uses transform rather than a width over 100%: an oversized grid child gets
+   pinned to the top of its cell instead of staying centred, which pushed the
+   logo visibly low. transform scales about the element's own centre, so the
+   mark stays centred on both axes. */
 .verse-logo img,
 .footer-logo img {
-  width: 125%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   max-width: none;
+  transform: scale(1.25);
 }
 .verse blockquote { position: relative; }
 .verse p {
