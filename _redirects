@@ -1,3 +1,7 @@
 # "How We Work" was renamed to "Our Work" — keep the old links working.
 /how-we-work.html  /our-work.html  301
 /how-we-work       /our-work       301
+
+# "Our Impact" was merged into "Our Work" — keep the old links working.
+/our-impact.html   /our-work.html  301
+/our-impact        /our-work       301
