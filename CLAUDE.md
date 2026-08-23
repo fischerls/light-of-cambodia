@@ -16,7 +16,7 @@ Static site for Light of Cambodia, a Christ-centered nonprofit in Pursat, Cambod
 
 1. **The logo is sacred.** Never edit, redraw, recolor, or regenerate `assets/logo.png` or any logo file. Use as-is.
 2. **Brand tokens only.** Colors and fonts come from `brand/brand.json` (Evergreen `#12361e`, Flame `#c74e33`, Marigold `#e8af4f`, Sunlight `#fee5b3`; Young Serif + Alegreya Sans, Noto Serif Khmer for Khmer text). Do not introduce new colors or fonts.
-3. **Nav and footer are duplicated in every HTML file** (no templating). If you change either, make the identical change in all seven pages: `index.html`, `our-story.html`, `our-work.html`, `our-impact.html`, `our-team.html`, `financials.html`, `prayer.html`.
+3. **Nav and footer are duplicated in every HTML file** (no templating). If you change either, make the identical change in all seven pages: `index.html`, `our-story.html`, `our-work.html`, `mission-trips.html`, `our-team.html`, `financials.html`, `prayer.html`.
 4. **Do not touch `functions/`** (the prayer form backend) or the Zeffy donation form ID (`0152b182-8cbf-4714-b26a-99909867ee95`) without explicit instruction from Larry.
 5. **Accessibility is non-negotiable (WCAG 2.2 AA).** Every image needs meaningful alt text. Keep heading order logical. Don't remove the skip link, focus styles, or carousel pause behavior. Text over photos needs the existing scrim/overlay treatment for contrast.
 6. **Photos**: put new images in `assets/photos/`, resized to roughly the dimensions of existing photos in the same section (check neighbors), JPG, kebab-case filenames (`team-first-last.jpg`). Never upload originals over ~400KB.

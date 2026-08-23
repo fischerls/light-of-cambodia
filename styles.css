@@ -592,8 +592,24 @@ p { text-wrap: pretty; }
 /* photo + copy band inside interior pages (reuses .band grid) */
 .band-tall .band-photo img { aspect-ratio: 4 / 5; }
 /* keep faces near the top of a portrait photo from being cropped */
-.band-photo img.focus-top { object-position: center top; }
-.band-photo img.focus-upper { object-position: center 28%; }
+.band-photo img.focus-top,
+.band-carousel img.focus-top { object-position: center top; }
+.band-photo img.focus-upper,
+.band-carousel img.focus-upper { object-position: center 28%; }
+
+/* a carousel used as a band's photo column: image-only slides, no card chrome,
+   sized to match the plain .band-photo it replaces */
+.band-carousel { margin-top: 0; }
+.band-flip .band-carousel { order: 2; }
+.band-carousel .carousel-slide {
+  grid-template-columns: 1fr;
+  gap: 0;
+  background: transparent;
+  border: 0;
+}
+.band-carousel .carousel-slide img { aspect-ratio: 5 / 4; border-radius: var(--radius); }
+.band-tall .band-carousel .carousel-slide img { aspect-ratio: 4 / 5; }
+.band-carousel .carousel-controls { margin-top: 0.9rem; }
 .band-copy > .band-note { margin-top: 1rem; font-style: italic; color: var(--ink-soft); }
 
 /* next-steps link row */
