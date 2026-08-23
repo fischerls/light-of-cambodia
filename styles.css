@@ -600,8 +600,46 @@ p { text-wrap: pretty; }
 /* photo + copy band inside interior pages (reuses .band grid) */
 .band-tall .band-photo img { aspect-ratio: 4 / 5; }
 /* keep faces near the top of a portrait photo from being cropped */
-.band-photo img.focus-top { object-position: center top; }
-.band-photo img.focus-upper { object-position: center 28%; }
+.band-photo img.focus-top,
+.band-carousel img.focus-top { object-position: center top; }
+.band-photo img.focus-upper,
+.band-carousel img.focus-upper { object-position: center 28%; }
+
+/* a carousel used as a band's photo column: image-only slides, no card chrome,
+   sized to match the plain .band-photo it replaces */
+.band-carousel { margin-top: 0; }
+.band-flip .band-carousel { order: 2; }
+.band-carousel .carousel-slide {
+  grid-template-columns: 1fr;
+  gap: 0;
+  background: transparent;
+  border: 0;
+}
+.band-carousel .carousel-slide img { aspect-ratio: 5 / 4; border-radius: var(--radius); }
+.band-tall .band-carousel .carousel-slide img { aspect-ratio: 4 / 5; }
+.band-carousel .carousel-controls { margin-top: 0.9rem; }
+
+/* mission trip funding goal */
+.trip-goal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  text-align: center;
+  background: var(--evergreen);
+  color: var(--on-dark);
+  border-radius: var(--radius);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  margin: 1.6rem 0 2rem;
+}
+.trip-goal strong {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--sunlight);
+  line-height: 1;
+}
+.trip-goal span { color: var(--on-dark-soft); font-size: 1rem; }
 .band-copy > .band-note { margin-top: 1rem; font-style: italic; color: var(--ink-soft); }
 
 /* next-steps link row */

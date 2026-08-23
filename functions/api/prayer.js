@@ -8,7 +8,7 @@
  * Required env var (Pages project → Settings → Variables):
  *   WEB3FORMS_KEY   free access key from web3forms.com, created with the
  *                   inbox that should receive requests
- *                   (lightofcambodia.loc@gmail.com)
+ *                   (info@lightofcambodia.org)
  * Optional:
  *   TURNSTILE_SECRET  Cloudflare Turnstile secret. When set, the matching site
  *                     key must also be set in app.js (TURNSTILE_SITEKEY), or

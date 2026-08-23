@@ -17,7 +17,7 @@ anything technical, and you cannot break the live site.
 |---|---|
 | `HOW-TO-EDIT.md` | **Read this first.** How to ask Claude for website changes. |
 | `index.html` | The homepage |
-| `our-story.html`, `our-work.html`, `our-impact.html`, `our-team.html`, `financials.html`, `prayer.html` | The other six pages |
+| `our-story.html`, `our-work.html`, `mission-trips.html`, `our-team.html`, `financials.html`, `prayer.html` | The other six pages |
 | `styles.css` | How the site looks (colors, spacing, type) |
 | `app.js` | The small bits of behavior (menu, stories carousel, prayer form) |
 | `assets/` | The logo and every photo |
