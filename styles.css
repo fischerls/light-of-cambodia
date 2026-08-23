@@ -282,6 +282,15 @@ p { text-wrap: pretty; }
   margin-bottom: 2.4rem;
   box-shadow: 0 0 70px oklch(0.79 0.13 78 / 0.5), 0 0 24px oklch(0.79 0.13 78 / 0.35);
 }
+/* logo.png carries ~21% transparent margin on every side, so the mark itself
+   fills only ~57% of the file. Scaling past the circle brings the mark up to
+   about 72% of the circle; the part that overflows is transparent padding. */
+.verse-logo img,
+.footer-logo img {
+  width: 125%;
+  height: auto;
+  max-width: none;
+}
 .verse blockquote { position: relative; }
 .verse p {
   font-family: "Young Serif", serif;
@@ -484,7 +493,6 @@ p { text-wrap: pretty; }
   .nav-logo { width: 76px; height: 76px; }
   .nav.scrolled .nav-logo { width: 56px; height: 56px; }
   .verse-logo { width: 132px; height: 132px; }
-  .verse-logo img { width: 118px; height: 118px; }
   .nav-toggle {
     display: flex;
     flex-direction: column;
