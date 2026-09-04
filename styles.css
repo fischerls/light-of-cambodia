@@ -477,6 +477,19 @@ p { text-wrap: pretty; }
   color: var(--on-dark-soft);
 }
 
+/* Florida solicitation disclosure. Chapter 496 F.S. requires the registration
+   number and this statement, in capitals, on every solicitation. The site
+   carries Give Now buttons on all seven pages, so it lives in the footer. */
+.footer-legal {
+  width: min(1100px, 100%);
+  margin: 0.9rem auto 0;
+  font-size: 0.72rem;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+  color: var(--on-dark-soft);
+  opacity: 0.85;
+}
+
 /* ---------- reveals (enhance-only: visible without JS) ---------- */
 .js .reveal {
   opacity: 0;
