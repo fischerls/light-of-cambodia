@@ -39,7 +39,7 @@ Rules: Flame is reserved for the primary give action. "Flame and marigold bring 
 
 ## Voice & Tone
 
-Warm, humble, faithful, relational, rooted. First-person plural, pastoral, plainspoken. Presence over programs: "walk alongside", "showing up, week after week", "partnership, not dependency", "local leaders carry the work." Avoid savior framing, urgency tactics, poverty spectacle, donor-hero language. Scripture quoted directly, not paraphrased.
+Warm, humble, faithful, relational, rooted. First-person plural, pastoral, plainspoken. Presence over programs: "walk alongside", "showing up, week after week", "local leaders carry the work", "Christ is already at work in the heart of the Cambodian people; we are grateful to walk alongside them." Avoid savior framing, urgency tactics, poverty spectacle, donor-hero language. Never describe our posture by negating a role ("partnership, not dependency", "we're partners, not rescuers", "relationship over rescue") — that phrasing still puts the US team at the center. Affirm what is already true in Cambodia instead. Scripture quoted directly, not paraphrased.
 
 ## Imagery
 
