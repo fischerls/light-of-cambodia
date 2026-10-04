@@ -11,7 +11,7 @@ Static site, no build step. Deployed to Cloudflare Pages; `lightofcambodia.org` 
 | `our-work.html` | Everything the ministry does and what has come of it: stat tiles, then photo-carousel bands for education, family care, church partnership, local leadership, and stewardship. Was two pages (Our Work + Our Impact) until they were merged. Update the stats whenever the Pursat team sends new numbers. |
 | `mission-trips.html` | The annual January trip: what it is, how gifts help send the team, and how to join. |
 | `our-team.html` | Cambodia ministry team, board, founders. Same card treatment for every group on purpose. |
-| `financials.html` | FY2025 summary table, expense-share bars, public filings. Numbers change once a year after the 990-EZ is filed. |
+| `financials.html` | FY2025 summary table, ministry-funds bars, the outreach trip as its own section, public filings and PDFs in `assets/docs/`. Keep the trip out of the chart on purpose. Numbers change once a year after the 990-EZ is filed. |
 | `prayer.html` | Prayer request / praise report form. |
 
 Nav and footer are duplicated in each file (no templating). Change one, change all seven.
@@ -53,8 +53,6 @@ and the page still shows the direct mailto fallback, so nothing silently disappe
 
 ## Still outstanding
 
-- `Light of Cambodia Inc_Form990-Ez.pdf` from Jennifer. Drop it in `assets/docs/` and swap the commented-out
-  download button on `financials.html` for the "available on request" line.
 - Founding-story video for `our-story.html`.
 
 ## Local development
