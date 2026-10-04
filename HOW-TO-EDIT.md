@@ -96,7 +96,6 @@ These are locked so nothing important gets damaged. If you truly need one change
 
 ## Things still needed from you
 
-- The **Form 990-EZ PDF** for the Financials page. Right now that page says "available on request."
 - The **founding-story video** for the Our Story page. There is a blank spot waiting for it.
 
 ---

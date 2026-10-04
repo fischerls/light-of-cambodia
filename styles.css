@@ -747,6 +747,8 @@ p { text-wrap: pretty; }
   overflow: hidden;
 }
 .chart-bar { height: 100%; background: var(--leaf); border-radius: 0 4px 4px 0; }
+.section-dark .prose .trip-figure { font-family: "Young Serif", serif; font-size: clamp(2.4rem, 5vw, 3.4rem); line-height: 1.1; color: var(--sunlight); margin: 1.2rem 0 0.4rem; }
+.section-dark .prose strong { color: var(--on-dark); }
 
 /* ---------- carousel ---------- */
 .carousel { position: relative; margin-top: 1.8rem; }
